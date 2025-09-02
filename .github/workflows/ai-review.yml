@@ -1,0 +1,10 @@
+name: Call Central AI Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  ai-review:
+    uses: SatishBhusarapudev/.github/.github/workflows/ai-review.yml@main
+    secrets: inherit
